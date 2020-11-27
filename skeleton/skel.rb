@@ -5,8 +5,14 @@ class Skel
   def initialize
     @input = File.read('input.txt')
   end
+
+  def parsed
+    @parsed ||= input.each.reduce do |line|
+      # parse line here
+    end
+  end
 end
 
 if $PROGRAM_NAME == __FILE__
-  skel = skel.new
+  skel = Skel.new
 end
