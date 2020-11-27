@@ -8,5 +8,5 @@ class Skel
 end
 
 if $PROGRAM_NAME == __FILE__
-  skel = Skel.new
+  skel = skel.new
 end
